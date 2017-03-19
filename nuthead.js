@@ -32,7 +32,7 @@ define(['lib/dom', 'lib/loader', 'lib/tools'], (dom, loader, tools) => {
 
 			this.config.elements.container = containerElement;
 			if (typeof dataPath === 'string')
-				this.config.dataPath = dataPath.trim().split('/').join('/');
+				this.config.dataPath = dataPath.trim().split('/').filter(item => item !== '').join('/');
 
 			Object.assign(
 				this.config.elements,
