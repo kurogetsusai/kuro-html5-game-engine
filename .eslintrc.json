@@ -1,0 +1,68 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true,
+		"amd": true
+	},
+	"globals": {
+		"requirejs": false
+	},
+	"extends": "eslint:all",
+	"rules": {
+		"arrow-body-style": ["off"],
+		"arrow-parens": ["error", "as-needed"],
+		"comma-spacing": ["off"],
+		"curly": ["error", "multi", "consistent"],
+		"default-case": ["off"],
+		"func-names": ["error", "never"],
+		"id-length": ["off"],
+		"indent": ["error", "tab"],
+		"linebreak-style": ["error", "unix"],
+		"lines-around-comment": ["off"],
+		"lines-around-directive": ["error", {
+			"before": "never",
+			"after": "always"
+		}],
+		"max-len": ["warn", {
+			"code": 160,
+			"tabWidth": 8
+		}],
+		"max-params": ["error", 6],
+		"multiline-ternary": ["off"],
+		"new-cap": ["error", {
+			"capIsNewExceptions": ["EvalError", "RangeError", "ReferenceError", "SyntaxError", "TypeError", "URIError"]
+		}],
+		"newline-before-return": ["off"],
+		"newline-per-chained-call": ["off"],
+		"no-case-declarations": ["off"],
+		"no-console": ["off"],
+		"no-magic-numbers": ["off"],
+		"no-multiple-empty-lines": ["error", {
+			"max": 1,
+			"maxBOF": 0,
+			"maxEOF": 0
+		}],
+		"no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+		"no-multi-spaces": ["off"],
+		"nonblock-statement-body-position": ["error", "below"],
+		"no-shadow": ["warn"],
+		"no-tabs": ["off"],
+		"no-ternary": ["off"],
+		"no-unused-vars": ["warn"],
+		"object-curly-newline": ["off"],
+		"object-shorthand": ["off"],
+		"one-var": ["error", "never"],
+		"padded-blocks": ["error", "never"],
+		"prefer-template": ["off"],
+		"quote-props": ["error", "as-needed"],
+		"quotes": ["error", "single"],
+		"semi": ["error", "always"],
+		"sort-keys": ["off"],
+		"space-before-function-paren": ["error", {
+			"anonymous": "always",
+			"named": "never",
+			"asyncArrow": "always"
+		}],
+		"strict": ["error", "global"]
+	}
+}

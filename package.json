@@ -1,0 +1,33 @@
+{
+	"name": "nuthead",
+	"version": "0.1.0",
+	"description": "A game engine for pixel art RPG games running in a web browser.",
+	"main": "nuthead.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kurogetsusai/nuthead.git"
+	},
+	"keywords": [
+		"html5",
+		"javascript",
+		"canvas",
+		"rpg",
+		"game",
+		"pixel art"
+	],
+	"author": "Sai Kurogetsu",
+	"license": "Unlicense",
+	"bugs": {
+		"url": "https://github.com/kurogetsusai/nuthead/issues"
+	},
+	"homepage": "https://github.com/kurogetsusai/nuthead#readme",
+	"dependencies": {
+		"requirejs": "^2.3.3"
+	},
+	"devDependencies": {
+		"eslint": "^3.18.0"
+	}
+}
