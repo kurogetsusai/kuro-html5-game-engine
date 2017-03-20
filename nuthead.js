@@ -39,9 +39,17 @@ define(['lib/dom', 'lib/loader', 'lib/tools'], (dom, loader, tools) => {
 				dom.setupContainer(this.config.elements.container)
 			);
 
-			loader.loadOnce(this.resources, this.config.dataPath, 'png' , 'entity', 'flower', 'blue');
-			loader.loadOnce(this.resources, this.config.dataPath, 'json', 'entity', 'flower');
-			loader.loadOnce(this.resources, this.config.dataPath, 'json', 'debug' , 'debug');
+			[
+				['png' , 'entity', 'flower', 'blue'],
+				['json', 'entity', 'flower'],
+				['json', 'debug' , 'debug']
+			].map(item =>
+				loader.createResource(...item)
+			).forEach(resource => {
+				this.resources.push(resource);
+				loader.loadResource(this.config.dataPath, resource);
+			});
+
 			loader.waitForAllFiles(
 				this.resources,
 				() => console.log(tools.stringify(this.resources)),
