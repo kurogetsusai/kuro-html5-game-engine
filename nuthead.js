@@ -21,11 +21,11 @@ define(['lib/dom', 'lib/loader', 'lib/tools'], (dom, loader, tools) => {
 		/** All dynamically loaded resources. */
 		resources: [],
 
-		/** Init Nuthead.
+		/** Inits Nuthead.
 		 * @param {element} containerElement Nuthead's container element
 		 * @param {function} onReady function called when Nuthead loads
 		 * @param {string} [dataPath] path to the data directory
-		 * @return {void} */
+		 * @returns {void} */
 		init(containerElement, onReady, dataPath) {
 			if (!(containerElement instanceof Element))
 				throw TypeError(ERROR_PREFIX + 'init: invalid function parameter, containerElement must be a DOM element');
