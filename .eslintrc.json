@@ -48,6 +48,7 @@
 		"no-shadow": ["warn"],
 		"no-tabs": ["off"],
 		"no-ternary": ["off"],
+		"no-undefined": ["off"],
 		"no-unused-vars": ["warn"],
 		"object-curly-newline": ["off"],
 		"object-shorthand": ["off"],
