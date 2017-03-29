@@ -11,6 +11,7 @@
 	"rules": {
 		"arrow-body-style": ["off"],
 		"arrow-parens": ["error", "as-needed"],
+		"capitalized-comments": ["off"],
 		"comma-spacing": ["off"],
 		"curly": ["error", "multi", "consistent"],
 		"default-case": ["off"],
@@ -18,6 +19,7 @@
 		"id-length": ["off"],
 		"indent": ["error", "tab"],
 		"linebreak-style": ["error", "unix"],
+		"line-comment-position": ["off"],
 		"lines-around-comment": ["off"],
 		"lines-around-directive": ["error", {
 			"before": "never",
@@ -36,6 +38,7 @@
 		"newline-per-chained-call": ["off"],
 		"no-case-declarations": ["off"],
 		"no-console": ["off"],
+		"no-inline-comments": ["off"],
 		"no-magic-numbers": ["off"],
 		"no-multiple-empty-lines": ["error", {
 			"max": 1,
@@ -45,6 +48,7 @@
 		"no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
 		"no-multi-spaces": ["off"],
 		"nonblock-statement-body-position": ["error", "below"],
+		"no-param-reassign": ["off"],
 		"no-shadow": ["warn"],
 		"no-tabs": ["off"],
 		"no-ternary": ["off"],

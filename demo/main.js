@@ -4,9 +4,13 @@ requirejs.config({
 	baseUrl: '..'
 });
 
-requirejs(['nuthead'], nuthead => {
+requirejs(['nuthead'], Nuthead => {
 	const nutheadDemoElement = document.getElementById('nuthead-demo');
-	const nutheadDemo = nuthead.init(nutheadDemoElement, () => {
-		console.log('hello world!');
-	}, '../data');
+	const nutheadDemo = new Nuthead(nutheadDemoElement, '../data');
+
+	nutheadDemo.loadMap('test').then(result => {
+		console.log(result);
+	}).catch(error => {
+		console.log(error.message);
+	});
 });
