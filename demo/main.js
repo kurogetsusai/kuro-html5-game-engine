@@ -5,7 +5,7 @@ requirejs.config({
 });
 
 requirejs(['nuthead'], Nuthead => {
-	const nutheadDemoElement = document.getElementById('nuthead-demo');
+	const nutheadDemoElement = document.getElementById('nutheadDemo');
 	const nutheadDemo = new Nuthead(nutheadDemoElement, '../data');
 
 	nutheadDemo.loadMap('test').then(result => {

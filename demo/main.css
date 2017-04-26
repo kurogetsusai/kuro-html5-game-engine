@@ -1,0 +1,14 @@
+* {
+	box-sizing: border-box;
+}
+
+#nutheadDemo {
+	position: relative;
+	margin: 20px;
+	border: 2px solid #199;
+	height: 200px;
+}
+
+#nutheadDemo canvas {
+	border: 2px solid red;
+}

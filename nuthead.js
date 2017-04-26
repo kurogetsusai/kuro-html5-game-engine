@@ -4,7 +4,7 @@
 define(['lib/dom', 'lib/loader', 'lib/map', 'lib/tools'], (dom, loader, map, tools) => {
 	const ERROR_PREFIX = 'Nuthead: ';
 
-	return class { // more like an interface with data
+	return class Nuthead { // more like an interface with data
 		/** Creates an instance of Nuthead.
 		 * @param {element} containerElement Nuthead's container element
 		 * @param {string} [dataPath] path to the data directory
